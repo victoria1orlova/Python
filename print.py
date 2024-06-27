@@ -1,0 +1,3 @@
+x = "šausmas"
+
+print(x)
