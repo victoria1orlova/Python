@@ -10,25 +10,22 @@ for i in range(b):
 for i in range(a):
     print("*", end = " ")'''
 
-#a = int(input("Enter number of side: "))
-a = 3
-b = 5
-#b = int(input("Enter number of another side: "))
+a = int(input("Enter number of side: "))
+b = int(input("Enter number of another side: "))
 
 sym = "*"
 symEmpty = "#"
 str = ""
 
-row = 0
-for i in range(a):
-    for j in range(a):
-        if row == 0:
+for row in range(a):
+    for col in range(b):
+        if row == 0 or row == a-1:
             str += sym
         else:
-            str += symEmpty
-    print(row)
-    row += 1
+            if col == 0 or col == b-1:
+                str += sym
+            else:
+                str += symEmpty
     str += "\n"
-    print(sym)
-
 print(str)
+print("Когда в зал?")
