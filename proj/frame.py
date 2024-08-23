@@ -8,7 +8,7 @@ def drawUnicodeBox(width, height):
 
     # боковые границы 
     for _ in range(height - 2):
-        middle = "\u2551" + " " * (width - 2) + "\u255d"
+        middle = "\u2551" + " " * (width - 2) + "\u2551"
         print(middle)
 
     # нижняя граница
